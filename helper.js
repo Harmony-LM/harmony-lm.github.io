@@ -26,7 +26,7 @@ function createAudioHTML(path) {
     let ext = ['.txt', '_gt.wav', '_hylm.wav', '_maa2.wav','_ldm.wav', '_tango.wav'];
   
     for (var i = 0; i < 10; i++) {
-      generateExampleRow(table.rows[1 + i], 'data/t2a/' + i, ext, 0);
+      generateExampleRow(table.rows[1 + i], 'data/t2s/' + i, ext, 0);
     }
   }
   
@@ -34,10 +34,10 @@ function createAudioHTML(path) {
   
   function generateVariable(tableId) {
     let table = document.getElementById(tableId);
-    let ext = ['.txt', '_maa2.wav', '_maa1.wav','_ldm.wav', '_tango.wav'];
+    let ext = ['.txt', '_gt.wav', '_hylm.wav','_musicgen.wav', '_musiclm.wav'];
   
     for (var i = 0; i < 9; i++) {
-      generateExampleRow(table.rows[1 + i], 'data/variable_length/' + i, ext, 0);
+      generateExampleRow(table.rows[1 + i], 'data/t2m/' + i, ext, 0);
     }
   }
   
